@@ -6,7 +6,8 @@ def analize(content,character):
     for i in content:
         if i == character:
             count = count + 1
-    return "You have {0} occurance of {1} in your content".format(count,character)
+    per  = (count/len(content)) * 100 
+    return "You have {0} occurance, {2}%  of {1} in your content".format(count,character,round(per))
 
 
 
